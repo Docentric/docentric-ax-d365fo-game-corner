@@ -1,0 +1,8 @@
+GameCornerShowcaseIntroduction=This window is a showcase of the Docentric Game Corner control, which is part of the Docentric AX product. The Docentric AX Game Corner model hosts that control on a form of its own and opens the form from the Settings menu. Copy the model to host the control on a form of your own.
+ ;Docentric Game Corner showcase - explanatory text shown above the hosted control on the showcase window; it has no counterpart in the product, while the rest of what the window itself shows is reused from @DocentricAX_GameCorner
+GameCornerShowcaseMenuItemLabel=Docentric game corner (POC)
+ ;Settings (gear) menu entry that opens the showcase window. It deliberately does not reuse @DocentricAX_GameCorner:GameCornerWindowTitle, which is also the caption of the product's own Game Corner window and would be renamed with it. The (POC) suffix marks this entry as the showcase one, so that an installation carrying both models can tell the two entries apart
+GameCornerShowcaseUserPrivilege=Docentric AX Game Corner Showcase User
+ ;Name of the security privilege that grants a user the Docentric Game Corner showcase window
+GameCornerShowcaseUserPrivilegeDescription=Grants access to the showcase window that hosts the Docentric Game Corner control; playing the games in it also requires the Docentric AX Game Corner User privilege of the Docentric AX product
+ ;Description of the Docentric AX Game Corner Showcase User security privilege; no closing period, a label may not end with one (BPErrorLabelWrongEndSign)

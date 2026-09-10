@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<IgnoreDiagnostics xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<!--
+	*************************************************************************************************************************
+	*** START OF XML SCHEMA
+	*************************************************************************************************************************
+	-->
+	<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" id="defaultSchema" attributeFormDefault="unqualified" elementFormDefault="qualified">
+		<xsd:element name="Name" type="xsd:string" />
+		<xsd:element name="Items">
+			<xsd:complexType>
+				<xsd:sequence>
+					<xsd:element minOccurs="0" maxOccurs="unbounded" name="Diagnostic">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="DiagnosticType" type="xsd:string" />
+								<xsd:element name="Severity" type="xsd:string" />
+								<xsd:element name="Path" type="xsd:string" />
+								<xsd:element name="Moniker" type="xsd:string" />
+								<xsd:element name="Message" type="xsd:string" />
+								<xsd:element name="Justification" type="xsd:string" />
+							</xsd:sequence>
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:sequence>
+			</xsd:complexType>
+		</xsd:element>
+	</xs:schema>
+
+	<!--
+	*************************************************************************************************************************
+	*** START OF XML BODY
+	*************************************************************************************************************************
+	-->
+
+	<Name>DocentricAXGameCorner_BPSuppressions</Name>
+	<Items>
+		<!-- Diagnostic item template
+		<Diagnostic>
+			<DiagnosticType>BestPractices</DiagnosticType>
+			<Severity>Warning</Severity>
+			<Path>(path given in warning message)</Path>
+			<Moniker>(moniker given in error message)</Moniker>
+			<Message>(message displayed by the best practices)</Message>
+			<Justification>(a justification for why you are ignoring this message)</Justification>
+		</Diagnostic>
+		-->
+
+		<!--
+		*************************************************************************************************************************
+		*** Custom form designs
+		*************************************************************************************************************************
+		-->
+
+		<Diagnostic>
+			<DiagnosticType>BestPractices</DiagnosticType>
+			<Severity>Warning</Severity>
+			<Path>dynamics://Form/DocGameCornerShowcaseWindow_DCGC/FormDesign/FormDesign/FormGroupControl/DialogContent</Path>
+			<Moniker>BPWarningFormDesignOrControlsWithCustomPattern</Moniker>
+			<Message>BPWarningFormDesignOrControlsWithCustomPattern: 'DialogContent' is using the 'Custom' pattern. Please apply one of the other available patterns.</Message>
+			<Justification>The form uses the standard Dialog pattern; only its DialogContent group is Custom, because it hosts the DocGameCornerControl extensible control. No other group pattern accepts an extensible control as its content, so Custom is the only applicable one. The platform's own DocumentUpload dialog does the same for the DocuUpload control.</Justification>
+		</Diagnostic>
+
+		<!--
+		*************************************************************************************************************************
+		*** The duty or the privilege is not referenced on any role.
+		*************************************************************************************************************************
+		-->
+
+		<Diagnostic>
+			<DiagnosticType>BestPractices</DiagnosticType>
+			<Severity>Warning</Severity>
+			<Path>dynamics://SecurityPrivilege/DocentricAXGameCornerShowcaseUser_DCGC</Path>
+			<Moniker>BPErrorPrivilegeNotCoveredByDuty</Moniker>
+			<Message>BPErrorPrivilegeNotCoveredByDuty: The privilege 'DocentricAXGameCornerShowcaseUser_DCGC' is not referenced on any duty.</Message>
+			<Justification>Intentionally not referenced by any duty. Installing the showcase must not hand its window to every user who already holds a Docentric AX duty; whoever installs it grants this privilege deliberately. The Docentric AX model carries unassigned privileges of its own for the same reason.</Justification>
+		</Diagnostic>
+	</Items>
+</IgnoreDiagnostics>
