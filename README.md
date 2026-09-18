@@ -32,7 +32,7 @@ You can learn more about the solution here:
 - **Standalone window**: The `DocGameCornerShowcaseWindow_DCGC` form (dialog pattern, caption **Docentric Game Corner**) hosts `DocGameCornerControl` sized to the available area, with a short introduction text above it. The form contains no custom X++ logic: the control renders its own state and does not decide who may use it.
 - **Initial game**: The control's `initialGame` design-time property (enum `DocGameCornerGame`: `Hopper`, `Tail`, `Shrinker`, `Bouncer`) selects the game shown first; the showcase starts with **Bouncing Breaker** (`Bouncer`).
 - **Settings menu entry**: `SysMenuSettings.Extension_DCGC` adds the `DocGameCornerShowcaseWindow_DCGC` menu item, labeled **Docentric game corner (POC)**, to the Settings (gear) menu. The (POC) suffix keeps it apart from the product's own Game Corner entry on an installation that carries both.
-- **Security**: The `DocentricAXGameCornerShowcaseUser_DCGC` privilege grants the showcase window; playing the games in it also requires the **Docentric AX Game Corner User** privilege of the Docentric AX product.
+- **Security**: The `DocentricAXGameCornerShowcaseUser_DCGC` privilege grants the showcase window. The games themselves are not governed by a privilege: in the product they are switched on per placement and can be switched off for the environment with the **DisableGameCorner** setting.
 
 ## Instructions
 
