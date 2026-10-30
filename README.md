@@ -23,7 +23,7 @@ Each release contains the source archives and the model file for import with Mod
 ## Articles
 
 You can learn more about the solution here:
-- [Work Hard, Play Hard: The Docentric Game Corner in D365FO](https://ax.docentric.com/<to-be-published>) <!-- TODO: replace with the published URL -->
+- [Work Hard, Play Hard: The Docentric Game Corner in D365FO](https://ax.docentric.com/work-hard-play-hard-the-docentric-game-corner-in-d365fo)
 
 ## Prerequisites
 
