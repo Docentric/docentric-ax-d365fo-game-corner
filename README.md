@@ -1,13 +1,9 @@
+# Docentric AX Game Corner for D365FO
+
 [![Docentric AX](https://img.shields.io/badge/DOCENTRIC-AX-E68800?style=for-the-badge&labelColor=002050)](https://ax.docentric.com/)
 [![Dynamics 365 F&O](https://img.shields.io/badge/Dynamics%20365%20F%26O-002050?style=for-the-badge&logo=microsoftdynamics365&logoColor=white)](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/)
 [![X++](https://img.shields.io/badge/X%2B%2B-1E3A8A?style=for-the-badge&logo=codemagic&logoColor=white)](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/dev-ref/xpp-language-reference)
 [![PowerShell](https://img.shields.io/badge/PowerShell-5391FE?style=for-the-badge&logo=powershell&logoColor=white)](https://learn.microsoft.com/en-us/powershell/)
-[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
-[![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://react.dev/)
-[![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
-[![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
-
-# Docentric AX Game Corner for D365FO
 
 This project is a showcase model that opens the Docentric AX **Game Corner** in a standalone window of Microsoft Dynamics 365 Finance and Operations (D365FO). The Game Corner is the `DocGameCornerControl` extensible control included in Docentric AX, with four small canvas games: **Jumpy Van**, **Growing Tail**, **Space Shrinker** and **Bouncing Breaker**. The showcase adds that control on a form of its own and adds a **Docentric game corner (POC)** entry to the standard **Settings** menu. In the product itself the control lives inside the **Bulk file upload** dialog, where it offers a break while files upload.
 
