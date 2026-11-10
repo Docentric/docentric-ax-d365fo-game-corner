@@ -1,9 +1,10 @@
-# Docentric AX Game Corner for D365FO
-
 [![Docentric AX](https://img.shields.io/badge/DOCENTRIC-AX-E68800?style=for-the-badge&labelColor=002050)](https://ax.docentric.com/)
 [![Dynamics 365 F&O](https://img.shields.io/badge/Dynamics%20365%20F%26O-002050?style=for-the-badge&logo=microsoftdynamics365&logoColor=white)](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/)
 [![X++](https://img.shields.io/badge/X%2B%2B-1E3A8A?style=for-the-badge&logo=codemagic&logoColor=white)](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/dev-ref/xpp-language-reference)
 [![PowerShell](https://img.shields.io/badge/PowerShell-5391FE?style=for-the-badge&logo=powershell&logoColor=white)](https://learn.microsoft.com/en-us/powershell/)
+[![License](https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge)](LICENSE)
+
+# Docentric AX Game Corner for D365FO
 
 This project is a showcase model that opens the Docentric AX **Game Corner** in a standalone window of Microsoft Dynamics 365 Finance and Operations (D365FO). The Game Corner is the `DocGameCornerControl` extensible control included in Docentric AX, with four small canvas games: **Jumpy Van**, **Growing Tail**, **Space Shrinker** and **Bouncing Breaker**. The showcase adds that control on a form of its own and adds a **Docentric game corner (POC)** entry to the standard **Settings** menu. In the product itself the control lives inside the **Bulk file upload** dialog, where it offers a break while files upload.
 
